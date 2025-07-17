@@ -1,0 +1,15 @@
+####
+
+POST  http://localhost:3001/producto
+Content-Type: application/json
+
+{
+    "nombre":"Zanahoria",
+    "descripcion": "2 unidades",
+    "marca":"Agro",
+    "stock":"20",
+    "precio":"2"
+
+}
+####
+GET  http://localhost:3001/producto

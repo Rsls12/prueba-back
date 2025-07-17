@@ -1,0 +1,77 @@
+POST http://localhost:3001/Usuario
+Content-Type: application/json
+
+{
+  "nombredeusuario": "admin",
+  "password": "admin",
+  "nombre": "adminProducto",
+  "apellido": "adminApellido",
+  "direccion": "Edificio Torre II",
+  "ciudad": "Lima",
+  "telefono": "987654321",
+  "isAdmin": true
+}
+
+####
+
+POST http://localhost:3001/Usuario
+Content-Type: application/json
+
+{
+  "nombredeusuario": "AntoniPro",
+  "password": "1234",
+  "nombre": "Anthony",
+  "apellido": "Gonzales",
+  "direccion": "Av. Radacuda 456",
+  "ciudad": "Lima",
+  "telefono": "987654321"
+}
+
+####
+POST http://localhost:3001/Categoria
+Content-Type: application/json
+
+{
+  "nombre": "Pescados",
+  "descripcion": "Categoría de pescados frescos",
+  "imagen": "https://example.com/images/pescados.jpg"
+}
+
+####
+POST http://localhost:3001/producto
+Content-Type: application/json
+
+{
+  "nombre": "Bonito",
+  "descripcion": "Pescado fresco y delicioso",
+  "marca": "Pescados del Valle",
+  "stock": 100,
+  "precio": 2,
+  "imagen": "https://example.com/images/bonito.jpg",
+  "idCategoria": 2
+}
+
+####
+
+GET http://localhost:3001/producto/
+
+####
+POST http://localhost:3001/Carrito/create
+Content-Type: application/json
+
+{
+  "idUsuario": 2
+}
+
+####
+POST http://localhost:3001/Carrito/add-item
+Content-Type: application/json
+
+{
+  "idUsuario": 2,
+  "idProducto": 3,
+  "cantidad": 3
+}
+
+####
+GET http://localhost:3001/Carrito/items/2

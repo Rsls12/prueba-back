@@ -1,0 +1,43 @@
+POST http://localhost:3001/Usuario
+Content-Type: application/json
+
+{
+  "nombredeusuario": "pinaya",
+  "password": "1234",
+  "nombre": "Sofia",
+  "apellido": "ZavPinaya",
+  "direccion": "Av. Los Próceres 123",
+  "ciudad": "Lima",
+  "telefono": "987654321"
+}
+
+###
+
+GET http://localhost:3001/Usuario
+
+###
+POST http://localhost:3001/users/
+Content-Type: application/json
+
+{
+       
+        "role":"user",
+        "username":"juan44",
+        "password":"2255"
+    }
+
+###
+
+
+POST http://localhost:3001/users/
+Content-Type: application/json
+
+{
+       
+        "role":"user",
+        "username":"anthony",
+        "password":"1234"
+}
+
+###
+GET  http://localhost:3001/Usuario/byEmail?email=juan123

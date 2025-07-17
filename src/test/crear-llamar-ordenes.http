@@ -1,0 +1,22 @@
+POST http://localhost:3001/Orden/create
+Content-Type: application/json
+
+{
+  "idUsuario": 3,
+  "metodoDeEntrega": "delivery",
+  "nroTarjeta": "4111111111111111",
+  "tipoTarjeta": "Visa"
+}
+
+####
+POST http://localhost:3001/Orden/add-item
+Content-Type: application/json
+
+{
+  "idOrden": 2,
+  "idProducto": 2,
+  "cantidad": 3
+}
+
+####
+GET http://localhost:3001/Orden/items/3

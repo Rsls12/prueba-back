@@ -1,0 +1,26 @@
+POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+    "nombredeusuario":"juansho",
+    "password":"1234"
+}
+
+###
+POST http://localhost:3001/login/
+Content-Type: application/json
+
+{
+    "nombredeusuario":"admin",
+    "password":"admin"
+}
+###
+POST http://localhost:3001/login/
+Content-Type: application/json
+
+{
+    "username":"anthony",
+    "password":"1234"
+}
+###
+GET http://localhost:3001/login

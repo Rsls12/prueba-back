@@ -11,4 +11,4 @@ router.put('/', upload.single('image'), controller.update);
 router.delete('/:id', controller.remove);
 
 export default router; 
-/*prueba*/
+/*prueba2121211*/

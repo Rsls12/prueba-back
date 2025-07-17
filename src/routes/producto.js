@@ -1,6 +1,6 @@
 import express from 'express';
 import controller from '../controllers/producto.js';
-import upload from '../middleware/multerconfig.js';
+import upload from '../middleware/multerConfig.js';
 
 const router = express.Router();
 
@@ -10,4 +10,5 @@ router.post('/', upload.single('image'), controller.create);
 router.put('/', upload.single('image'), controller.update);
 router.delete('/:id', controller.remove);
 
-export default router;
+export default router; 
+/*prueba*/
